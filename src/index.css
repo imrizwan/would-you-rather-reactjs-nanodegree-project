@@ -101,7 +101,7 @@ button {
 }
 
 .tile-item {
-  height: 162px;
+  height: 207px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px;
@@ -120,7 +120,7 @@ a {
 .tile-header {
   height: 40px;
   line-height: 40px;
-  background: #581845;
+  background: blue;
   color: #fff;
 }
 
@@ -169,7 +169,7 @@ a {
 }
 
 .question-detail {
-  height: 250px;
+  height: 312px;
 }
 
 .question-detail .tile-left {

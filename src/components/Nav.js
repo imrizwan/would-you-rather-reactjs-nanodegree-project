@@ -8,26 +8,48 @@ class Nav extends Component {
     const avatar = user ? user.avatarURL : "placeholder.png";
     const name = user ? user.name : "";
     return (
-      <nav className="nav">
-        <ul>
-          <li>
-            <NavLink to="/dashboard" exact activeClassName="active">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/add" exact activeClassName="active">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item mr-2 active">
+              <NavLink to="/dashboard" exact activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <NavLink
+              className="nav-item mr-2"
+              to="/add"
+              exact
+              activeClassName="active"
+            >
               New Question
             </NavLink>
-          </li>
-          <li>
-            <NavLink to="/leaderboard" exact activeClassName="active">
+            <NavLink
+              className="nav-item mr-2"
+              to="/leaderboard"
+              exact
+              activeClassName="active"
+            >
               Leader Board
             </NavLink>
-          </li>
-          {authedUser && (
-            <li className="user-info">
-              <NavLink to="/" exact activeClassName="active">
+            {authedUser && (
+              <NavLink
+                className="nav-item user-info"
+                to="/"
+                exact
+                activeClassName="active"
+              >
                 <div className="nav-user">
                   <span>Hello {name}</span>
                   <img
@@ -38,9 +60,9 @@ class Nav extends Component {
                   <span>Logout</span>
                 </div>
               </NavLink>
-            </li>
-          )}
-        </ul>
+            )}
+          </ul>
+        </div>
       </nav>
     );
   }
@@ -50,7 +72,7 @@ function mapStateToProps({ authedUser, users }, props) {
   return {
     authedUser,
     users,
-    user: users[authedUser]
+    user: users[authedUser],
   };
 }
 export default connect(mapStateToProps)(Nav);

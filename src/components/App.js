@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Router>
         <Fragment>
-          <div className="container">
+          <div>
             <Nav />
             <div className="main-content">
               <Switch>
