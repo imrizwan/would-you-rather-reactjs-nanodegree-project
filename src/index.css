@@ -1,0 +1,303 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.main-content {
+  text-align: center;
+  margin: 0 auto;
+  width: 480px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+ul {
+  padding-left: 0;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav {
+  margin: 50px auto;
+  width: 80%;
+  margin-top: 20px;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav li {
+  height: 20px;
+}
+
+.nav li:first-child {
+  padding-left: 0;
+}
+
+/* .nav li:last-child {
+    float: right;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: auto;
+  } */
+
+.nav-user {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+.nav-avatar {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  margin: 0 5px 0 10px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+}
+
+/*dashboard*/
+button {
+  margin: 0px auto;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.29);
+  cursor: pointer;
+  background: #fff;
+  font-size: 16px;
+  width: 240px;
+  position: relative;
+  outline: 0;
+}
+
+.btn-default {
+  padding: 6px;
+  color: #581845;
+}
+
+.btn-group .btn-selected {
+  color: #581845;
+}
+
+.btn-group .btn-default {
+  padding: 10px;
+  color: #000;
+}
+
+.tile-item {
+  height: 162px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.tile-body {
+  padding: 12px;
+}
+
+.tile-header {
+  height: 40px;
+  line-height: 40px;
+  background: #581845;
+  color: #fff;
+}
+
+.tile-left {
+  width: 33%;
+  display: inline-block;
+  border-right: 1px solid #ccc;
+}
+
+.question-body {
+  width: 62%;
+  float: right;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.would-you {
+  font-weight: bold;
+}
+
+.question-text {
+  margin: 12px 0;
+}
+
+.option-container {
+  margin: 10px;
+  border-radius: 6px;
+  background: #eee;
+  padding: 10px;
+  border: 1px solid #c2c2c2;
+  position: relative;
+}
+
+.option-container.selected {
+  border-color: transparent;
+  color: #fff;
+  background: #581845;
+}
+
+.option {
+  margin: 5px 0;
+  cursor: pointer;
+}
+.option-selected {
+  color: #581845;
+}
+
+.question-detail {
+  height: 250px;
+}
+
+.question-detail .tile-left {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.users-list .tile-item {
+  padding: 10px;
+}
+
+.tile-section {
+  display: inline-block;
+}
+
+.tile-section.section-1 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-right: 1px solid #ccc;
+}
+
+.tile-section.section-1,
+.tile-section.section-3 {
+  width: 25%;
+}
+
+.tile-section.section-3 {
+  width: 24%;
+  border: 1px solid #ccc;
+  height: 85px;
+  margin-top: 38px;
+  vertical-align: top;
+}
+
+.tile-section.section-2 {
+  vertical-align: top;
+  width: 47%;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.tile-section.section-2 .user-name {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.tile-section.section-2 .label {
+  padding: 10px 0px;
+  display: inline-block;
+  width: 180px;
+}
+
+.total-score-header {
+  background: #581845;
+  padding: 10px;
+  color: #fff;
+}
+
+.total-score-count {
+  padding: 15px;
+}
+
+form {
+  padding: 15px;
+  text-align: left;
+}
+
+input {
+  display: block;
+  width: 95%;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+.new-question {
+  height: 272px;
+}
+
+.new-question button {
+  width: 400px;
+  margin-left: 22px;
+  color: #581845;
+  border: 1px solid #581845;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+}
+
+.user-select div {
+  padding: 18px;
+}
+
+.tile-item.login {
+  height: 250px;
+}
+
+.tile-item.login button {
+  margin-top: 30px;
+  color: #581845;
+  border-color: #581845;
+}
+
+.your-vote {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.option-container.selected .your-vote {
+  display: block;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.user-info {
+  padding-left: 200px;
+}
+
+.nav .active {
+  color: #581845;
+}
